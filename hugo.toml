@@ -1,0 +1,31 @@
+baseURL = "https://rajaabboy.com"
+locale = "en-us"
+title = "Raja Abboy"
+
+[params]
+  author      = "Raja Abboy"
+  headline    = "Senior Service Delivery Manager · Global Delivery & Program Leadership"
+  description = "Enterprise service delivery leader across Banking, Insurance & Retail. $30M portfolios. Teams of 100+. Uptime you can count on."
+  # Sourced directly from Raja Abboy — real, functional profile URL
+  linkedin    = "https://www.linkedin.com/in/raja-abboy-b289228/"
+  # Sourced directly from Raja Abboy
+  email       = "rajaabboy@gmail.com"
+  # TODO: add resume.pdf to /static and update this path once supplied
+  resume      = "/resume.pdf"
+
+[menu]
+  [[menu.main]]
+    name   = "About"
+    url    = "/about/"
+    weight = 1
+  [[menu.main]]
+    name   = "Writing"
+    url    = "/posts/"
+    weight = 2
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.highlight]
+    noClasses = false

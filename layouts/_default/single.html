@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.Language.Lang | default "en" }}">
+<head>{{ partial "head.html" . }}</head>
+<body>
+<div class="site">
+  {{ partial "sidebar.html" . }}
+
+  <main class="content">
+
+    <header class="post-header ani d0">
+      <h1 class="post-title">{{ .Title }}</h1>
+      {{ if not .Params.hidemeta }}
+      <div class="post-meta">
+        <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time>
+        {{ if .ReadingTime }}<span>{{ .ReadingTime }} min read</span>{{ end }}
+      </div>
+      {{ end }}
+    </header>
+
+    <article class="prose ani d1">{{ .Content }}</article>
+
+    {{ if not .Params.hidenav }}
+      {{ if or .PrevInSection .NextInSection }}
+      <nav class="post-nav" aria-label="Post navigation">
+        {{ if .PrevInSection }}
+        <a href="{{ .PrevInSection.Permalink }}" class="pn-link pn-prev">
+          <span class="pn-dir">← Previous</span>
+          <span class="pn-title">{{ .PrevInSection.Title }}</span>
+        </a>
+        {{ else }}<div></div>{{ end }}
+        {{ if .NextInSection }}
+        <a href="{{ .NextInSection.Permalink }}" class="pn-link pn-next">
+          <span class="pn-dir">Next →</span>
+          <span class="pn-title">{{ .NextInSection.Title }}</span>
+        </a>
+        {{ else }}<div></div>{{ end }}
+      </nav>
+      {{ end }}
+      <a href="/posts/" class="back-link">← All writing</a>
+    {{ end }}
+
+  </main>
+</div>
+</body>
+</html>

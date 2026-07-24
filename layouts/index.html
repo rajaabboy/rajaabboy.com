@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.Language.Lang | default "en" }}">
+<head>{{ partial "head.html" . }}</head>
+<body>
+<div class="site">
+  {{ partial "sidebar.html" . }}
+
+  <main class="content">
+
+    <section class="section ani d0">
+      <p class="section-label">Experience</p>
+      <div class="building-list">
+
+        <div>
+          <span class="bld-name" style="pointer-events:none;cursor:default">Senior Service Delivery Manager · Celonis</span>
+          <p class="bld-desc">
+            Own delivery for premier global accounts protecting close to $30M in ARR.
+            When high-severity platform instability hits, I'm the executive point of
+            contact — leading the escalation, keeping client leadership informed, and
+            turning the incident into a reason for them to trust us more.
+          </p>
+        </div>
+
+        <div>
+          <span class="bld-name" style="pointer-events:none;cursor:default">SRE &amp; Governance Leadership · Wells Fargo</span>
+          <p class="bld-desc">
+            Brought SRE discipline to crown-jewel brokerage platforms, onboarding
+            Tier-1 applications onto unified observability and holding monthly
+            availability at 99.5%. Owned root-cause analysis end to end and acted
+            as the change gatekeeper that kept the platform stable.
+          </p>
+        </div>
+
+        <div>
+          <span class="bld-name" style="pointer-events:none;cursor:default">PMO &amp; Delivery Leadership · Cognizant (13 years)</span>
+          <p class="bld-desc">
+            Led PMOs and delivery teams of up to 120+ people and owned accounts
+            worth $9M/year (Fossil) and $2.4M/year (Payless) — managing budgets,
+            forecasts, and client proposals. Named Retail CG Icon of the Year, 2015.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="section ani d1">
+      <p class="section-label">Selected Work</p>
+      <div class="building-list">
+
+        <div>
+          <span class="bld-name" style="pointer-events:none;cursor:default">AI-Augmented Service Delivery Rollout — Celonis</span>
+          <p class="bld-desc">
+            Integrating generative-AI tools to speed root-cause analysis and
+            automate reporting across premier accounts.
+          </p>
+        </div>
+
+        <div>
+          <span class="bld-name" style="pointer-events:none;cursor:default">SRE &amp; Single-Pane Observability — Wells Fargo</span>
+          <p class="bld-desc">
+            Onboarded Tier-1 applications to unified IT and business KPI dashboards.
+          </p>
+        </div>
+
+        <div>
+          <span class="bld-name" style="pointer-events:none;cursor:default">Legacy Modernization &amp; Data Migration — Cognizant / Manulife</span>
+          <p class="bld-desc">
+            Led a complex platform-conversion effort delivering client cost savings.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="section ani d2">
+      <p class="section-label">By the Numbers</p>
+      <ul class="stat-strip">
+        <li><span class="stat-value">21+</span><span class="stat-label">years' experience</span></li>
+        <li><span class="stat-value">$30M</span><span class="stat-label">ARR protected</span></li>
+        <li><span class="stat-value">120+</span><span class="stat-label">team members led</span></li>
+        <li><span class="stat-value">99.5%</span><span class="stat-label">system availability</span></li>
+        <li><span class="stat-value">2015</span><span class="stat-label">Retail CG Icon of the Year</span></li>
+      </ul>
+    </section>
+
+    {{ $posts := where .Site.RegularPages "Type" "posts" }}
+    {{ if $posts }}
+    <section class="section ani d3">
+      <p class="section-label">Writing</p>
+      <ul class="writing-list">
+        {{ range first 6 $posts }}
+        <li>
+          <a href="{{ .Permalink }}" class="wl-item">
+            <span class="wl-title">{{ .Title }}</span>
+            <span class="wl-date">{{ .Date.Format "Jan 2006" }}</span>
+          </a>
+        </li>
+        {{ end }}
+      </ul>
+      {{ if gt (len $posts) 6 }}
+      <a href="/posts/" class="more-link">All writing →</a>
+      {{ end }}
+    </section>
+    {{ end }}
+
+    <section class="section ani d4">
+      <p class="section-label">Focus Areas</p>
+
+      <p class="skill-group-label">Strategic Leadership &amp; Governance</p>
+      <ul class="skill-list">
+        <li class="skill-pill">Enterprise Service Management</li>
+        <li class="skill-pill">Portfolio Governance &amp; PMO</li>
+        <li class="skill-pill">P&amp;L &amp; Revenue Ownership</li>
+        <li class="skill-pill">Operating Model Design</li>
+        <li class="skill-pill">Executive Stakeholder Management</li>
+      </ul>
+
+      <p class="skill-group-label">Operations &amp; Resiliency</p>
+      <ul class="skill-list">
+        <li class="skill-pill">SRE &amp; Platform Resiliency</li>
+        <li class="skill-pill">SLA/SLO Architecture</li>
+        <li class="skill-pill">Incident &amp; Escalation Governance</li>
+        <li class="skill-pill">Observability &amp; KPI Strategy</li>
+        <li class="skill-pill">MTTR/MTTA Optimization</li>
+        <li class="skill-pill">Business Continuity</li>
+      </ul>
+
+      <p class="skill-group-label">Delivery &amp; Program Management</p>
+      <ul class="skill-list">
+        <li class="skill-pill">Program &amp; Project Management</li>
+        <li class="skill-pill">Agile / Scrum / Kanban</li>
+        <li class="skill-pill">Contract &amp; SOW Governance</li>
+        <li class="skill-pill">Vendor &amp; Partner Management</li>
+        <li class="skill-pill">Resource &amp; Capacity Planning</li>
+      </ul>
+
+      <p class="skill-group-label">Technology &amp; AI Enablement</p>
+      <ul class="skill-list">
+        <li class="skill-pill">AI-Augmented Delivery</li>
+        <li class="skill-pill">Automation &amp; TOIL Reduction</li>
+        <li class="skill-pill">Legacy Modernization</li>
+        <li class="skill-pill">Cloud Migration Oversight</li>
+        <li class="skill-pill">Multi-Technology Team Leadership</li>
+      </ul>
+    </section>
+
+  </main>
+</div>
+</body>
+</html>

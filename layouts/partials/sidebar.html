@@ -1,0 +1,39 @@
+<aside class="sidebar">
+  <div class="sidebar-top">
+    <a href="/" class="sidebar-avatar" aria-label="Home">
+      <!-- TODO: replace with a professional headshot | placeholder: RAJA_PHOTO_URL -->
+      <img src="/avatar.svg" alt="Raja Abboy" width="72" height="72" data-placeholder="RAJA_PHOTO_URL">
+    </a>
+    <a href="/" class="sidebar-name">Raja Abboy</a>
+    <p class="sidebar-tagline">{{ .Site.Params.headline }}</p>
+    <p class="sidebar-bio">
+      I'm a service delivery and program management leader with 21+ years keeping
+      enterprise platforms stable, customers confident, and global teams aligned.
+      Today I protect a $30M portfolio at Celonis while championing AI-augmented
+      operations. Read more <a href="/about/">about Raja</a>.
+    </p>
+
+    <nav class="sidebar-nav" aria-label="Primary">
+      {{- $cur := .RelPermalink }}
+      {{ range .Site.Menus.main }}
+      {{- $ext := strings.HasPrefix .URL "http" }}
+      {{- $active := and (not $ext) (strings.HasPrefix $cur .URL) }}
+      <a href="{{ .URL }}"
+         class="sidebar-nav-link{{ if $ext }} ext{{ end }}{{ if $active }} active{{ end }}"
+         {{- if $ext }} target="_blank" rel="noopener noreferrer"{{ end }}>
+        {{- .Name -}}
+      </a>
+      {{ end }}
+    </nav>
+  </div>
+
+  <div class="sidebar-connect">
+    <p class="sidebar-connect-label">Connect</p>
+    <a href="{{ .Site.Params.linkedin }}" target="_blank" rel="noopener" class="sidebar-connect-link">LinkedIn</a>
+    {{ with .Site.Params.email }}<a href="mailto:{{ . }}" class="sidebar-connect-link">Email</a>{{ end }}
+    <!-- TODO: add resume.pdf to /static and confirm this link | placeholder: RAJA_RESUME_URL -->
+    {{ with .Site.Params.resume }}<a href="{{ . }}" target="_blank" rel="noopener" class="sidebar-connect-link" data-placeholder="RAJA_RESUME_URL">Résumé</a>{{ end }}
+  </div>
+
+  <p class="sidebar-foot">© {{ now.Year }} Raja Abboy</p>
+</aside>

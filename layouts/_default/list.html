@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.Language.Lang | default "en" }}">
+<head>{{ partial "head.html" . }}</head>
+<body>
+<div class="site">
+  {{ partial "sidebar.html" . }}
+
+  <main class="content">
+
+    <header class="page-header ani d0">
+      <h1 class="page-title">{{ .Title | default "Writing" }}</h1>
+      {{ with .Description }}<p class="page-desc">{{ . }}</p>{{ end }}
+    </header>
+
+    {{ if .Pages }}
+    <ul class="archive writing-list">
+      {{ range .Pages }}
+      <li>
+        <a href="{{ .Permalink }}" class="wl-item">
+          <span class="wl-title">{{ .Title }}</span>
+          <span class="wl-date">{{ .Date.Format "Jan 2, 2006" }}</span>
+        </a>
+      </li>
+      {{ end }}
+    </ul>
+    {{ else }}
+    <div class="empty-state">Nothing here yet.</div>
+    {{ end }}
+
+  </main>
+</div>
+</body>
+</html>

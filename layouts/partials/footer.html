@@ -1,0 +1,21 @@
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-inner">
+      <p class="footer-copy">© {{ now.Year }} Raja Abboy</p>
+      <ul class="footer-links">
+        <li><a href="{{ .Site.Params.linkedin }}" target="_blank" rel="noopener">LinkedIn</a></li>
+        {{ with .Site.Params.email }}<li><a href="mailto:{{ . }}">Email</a></li>{{ end }}
+        {{ with .Site.Params.resume }}<li><a href="{{ . }}" target="_blank" rel="noopener" data-placeholder="RAJA_RESUME_URL">Résumé</a></li>{{ end }}
+      </ul>
+    </div>
+  </div>
+</footer>
+<script>
+(function(){
+  var nav = document.getElementById('site-nav');
+  if (!nav) return;
+  function tick(){ nav.classList.toggle('scrolled', window.scrollY > 4); }
+  window.addEventListener('scroll', tick, { passive: true });
+  tick();
+})();
+</script>
