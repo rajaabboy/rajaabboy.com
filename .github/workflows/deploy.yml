@@ -32,9 +32,16 @@ jobs:
       - name: Build
         run: hugo --minify
 
+      - name: Ensure Cloudflare Pages project exists
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: |
+          npx wrangler pages project create "${{ env.CLOUDFLARE_PAGES_PROJECT }}" --production-branch=main || true
+
       - name: Deploy to Cloudflare Pages
         uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          command: pages deploy public --project-name=${{ env.CLOUDFLARE_PAGES_PROJECT }} --branch=${{ github.head_ref || github.ref_name }}
+          command: pages deploy public --project-name=${{ env.CLOUDFLARE_PAGES_PROJECT }} --branch=${{ github.head_ref || github.ref_name }} --commit-dirty=true
