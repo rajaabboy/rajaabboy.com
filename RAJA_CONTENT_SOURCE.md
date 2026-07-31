@@ -65,7 +65,7 @@ Across 13 years I led PMOs and delivery teams of up to 120+ people and owned acc
 
 | 21+ | $30M | 120+ | 99.5% | 2015 |
 |---|---|---|---|---|
-| years' experience | ARR protected | team members led | system availability | Retail CG Icon of the Year |
+| years' experience | ARR protected | PMO Goverance | system availability | Retail CG Icon of the Year |
 
 ---
 
