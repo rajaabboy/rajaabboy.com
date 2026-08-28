@@ -1,0 +1,35 @@
+# data/linkedin_posts.yaml
+#
+# Add a new post by copying a block below. Newest post can go anywhere in
+# this list — the template sorts by `date` automatically, newest first.
+#
+# Fields:
+#   title   - the hook line / headline of the post
+#   excerpt - 2-3 sentence summary (don't need to copy the whole post)
+#   date    - format: YYYY-MM-DD
+#   url     - the LinkedIn post permalink (utm/tracking params are fine to keep or strip)
+#   tags    - one or more of: "Service Delivery", "AI in Ops", "Leadership", "Career"
+#             (edit/add tags freely — the filter buttons are generated from whatever tags appear here)
+
+- title: "Major Incident Management: More Than Just Incident Resolution"
+  excerpt: >
+    MIM can run as a standalone managed service, but it shouldn't operate in
+    isolation — it works best as the orchestration layer connecting Incident,
+    Problem, Change, Release, Defect and Knowledge Management. The real
+    measure of MIM isn't just how fast an incident is resolved, but how the
+    resulting learnings make the platform more resilient going forward.
+  date: 2026-08-14
+  url: "https://www.linkedin.com/posts/raja-abboy-b289228_majorincidentmanagement-mim-itsm-activity-7492804221713686528-fAw9"
+  tags: ["Service Delivery", "AI in Ops"]
+
+- title: "The Future of Global Service Delivery: From Operational Excellence to AI-Powered Enterprise Leadership"
+  excerpt: >
+    Global Service Delivery has evolved from keeping systems running into a
+    strategic capability spanning Enterprise Service Management, SRE, and
+    AI-augmented delivery. AI won't replace Service Delivery leaders — it
+    will amplify those who combine governance, engineering excellence, and
+    customer-centric thinking to protect revenue and drive business
+    resilience.
+  date: 2026-07-28
+  url: "https://www.linkedin.com/posts/raja-abboy-b289228_servicedelivery-itleadership-businessroi-activity-7491174969838604288-T8Nj"
+  tags: ["Service Delivery", "AI in Ops", "Leadership"]
