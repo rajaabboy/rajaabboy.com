@@ -40,7 +40,7 @@
       <h3 class="linkedin-posts__card-title">{{ .title }}</h3>
       <p class="linkedin-posts__card-excerpt">{{ .excerpt }}</p>
       <div class="linkedin-posts__card-meta">
-        <time datetime="{{ .date }}">{{ dateFormat "Jan 2, 2006" .date }}</time>
+        <time datetime="{{ .date }}">{{ dateFormat "January 2006" .date }}</time>
         {{ range .tags }}
         <span class="linkedin-posts__tag">{{ . }}</span>
         {{ end }}
