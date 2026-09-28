@@ -1,4 +1,4 @@
 +++
 title = "Writing"
-description = "Notes on service delivery, process, and enterprise operations."
+description = "LinkedIn Posts about Service delivery Operations and Transitioning to CTO Leadership ."
 +++
