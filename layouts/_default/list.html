@@ -32,11 +32,13 @@
       <article class="writing-card">
 
         <p class="writing-category">
-          {{ with .Params.categories }}
-            {{ delimit . ", " }}
-          {{ else }}
-            Technology & Leadership
-          {{ end }}
+         {{ with .Params.categories }}
+        <div class="writing-categories">
+        {{ range . }}
+            <span class="writing-category">{{ . }}</span>
+        {{ end }}
+    </div>
+{{ end }}
         </p>
 
         <h2>
