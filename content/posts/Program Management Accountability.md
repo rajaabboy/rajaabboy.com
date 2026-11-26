@@ -1,5 +1,5 @@
 ---
-Category: "Global Service Delivery - Program Management"
+category: "Global Service Delivery - Program Management"
 title: "Go-Live is not the finish line"
 date: 2026-11-18
 draft: false
