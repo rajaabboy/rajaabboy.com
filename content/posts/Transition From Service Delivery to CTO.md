@@ -4,7 +4,7 @@ date: 2026-09-26
 draft: false
 description: "Transitioning from Service Delivery Leader to CTO."
 categories:
-  - CTO LEADERSHIP | 
+  - CTO LEADERSHIP 
   - TECHNOLOGY STRATEGY
 ---
 
