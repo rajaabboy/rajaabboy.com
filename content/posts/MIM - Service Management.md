@@ -4,7 +4,7 @@ date: 2026-08-14
 draft: false
 description: "Major Incident Management: More Than Just Incident Resolution."
 categories:
-  - GLOBAL SERVICE DELIVERY | 
+  - GLOBAL SERVICE DELIVERY 
   - DELIVERY & OPERATIONAL EXCELLENCE
 ---
 
