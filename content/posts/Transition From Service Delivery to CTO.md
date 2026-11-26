@@ -1,4 +1,5 @@
 ---
+Category: "Technology & Leadership"
 title: "From Operational Delivery to the C-Suite"
 date: 2026-09-26
 draft: false
