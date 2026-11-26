@@ -37,7 +37,12 @@
   <div class="linkedin-posts__grid">
     {{ range $posts }}
     <article class="linkedin-posts__card" data-tags="{{ delimit .tags "," }}">
-      <h3 class="linkedin-posts__card-title">{{ .title }}</h3>
+      <h3 class="linkedin-posts__card-title">{{ .title }}
+      Title = "
+From Operational Delivery to the C-Suite: Transitioning from Service Delivery Leader to CTO https://lnkd.in/p/gfcahc_k
+
+From Technology Operations to Business Transformation: The Evolving Role of the CTO https://lnkd.in/p/gsWTgQMW"
+      </h3>
       <p class="linkedin-posts__card-excerpt">{{ .excerpt }}</p>
       <div class="linkedin-posts__card-meta">
         <time datetime="{{ .date }}">{{ dateFormat "Jan 2, 2006" .date }}</time>
