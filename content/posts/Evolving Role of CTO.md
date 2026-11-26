@@ -3,6 +3,9 @@ title: "From Technology Operations to Business Transformation"
 date: 2026-09-25
 draft: false
 description: "The Evolving Role of the CTO"
+categories:
+  - DIGITAL TRANSFORMATION | 
+  - ENTERPRISE TECHNOLOGY
 ---
 
 ## From Technology Operations to Business Transformation
