@@ -313,6 +313,26 @@ a.wl-item:hover .wl-title { color: var(--accent); }
 }
 .more-link:hover { color: var(--text); }
 
+/* Writing Categories */
+
+.writing-categories {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 14px;
+}
+
+.writing-category {
+    display: inline-block;
+    padding: 5px 11px;
+    border-radius: 20px;
+    background: var(--accent-light, #eeeeee);
+    color: var(--accent, #333333);
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
 /* ─── Skills / Focus Areas ────────────────────────────────── */
 
 .skill-group-label {
