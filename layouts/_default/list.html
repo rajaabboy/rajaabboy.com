@@ -1,33 +1,76 @@
 <!DOCTYPE html>
 <html lang="{{ .Site.Language.Lang | default "en" }}">
-<head>{{ partial "head.html" . }}</head>
+<head>
+  {{ partial "head.html" . }}
+</head>
+
 <body>
 <div class="site">
+
   {{ partial "sidebar.html" . }}
 
   <main class="content">
 
     <header class="page-header ani d0">
-      <h1 class="page-title">{{ .Title | default "Writing" }}</h1>
-      {{ with .Description }}<p class="page-desc">{{ . }}</p>{{ end }}
+
+      <h1 class="page-title">Writing & Thought Leadership</h1>
+
+      <p class="page-desc">
+        Perspectives on Enterprise Technology, Global Service
+        Delivery, AI-Driven Operations, Digital Transformation
+        and CTO Leadership.
+      </p>
+
     </header>
 
     {{ if .Pages }}
-    <ul class="archive writing-list">
+
+    <div class="writing-grid">
+
       {{ range .Pages }}
-      <li>
-        <a href="{{ .Permalink }}" class="wl-item">
-          <span class="wl-title">{{ .Title }}</span>
-          <span class="wl-date">{{ .Date.Format "Jan 2, 2006" }}</span>
+
+      <article class="writing-card">
+
+        <p class="writing-category">
+          {{ with .Params.categories }}
+            {{ delimit . ", " }}
+          {{ else }}
+            Technology & Leadership
+          {{ end }}
+        </p>
+
+        <h2>
+          <a href="{{ .RelPermalink }}">
+            {{ .Title }}
+          </a>
+        </h2>
+
+        <p class="writing-date">
+          {{ .Date.Format "January 2, 2006" }}
+        </p>
+
+        <p class="writing-description">
+          {{ .Description }}
+        </p>
+
+        <a href="{{ .RelPermalink }}" class="writing-read">
+          Read Article →
         </a>
-      </li>
+
+      </article>
+
       {{ end }}
-    </ul>
+
+    </div>
+
     {{ else }}
-    <div class="empty-state">Nothing here yet.</div>
+
+      <p>No articles published yet.</p>
+
     {{ end }}
 
   </main>
+
 </div>
 </body>
 </html>
