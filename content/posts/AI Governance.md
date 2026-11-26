@@ -1,8 +1,8 @@
 ---
-title: "IS OUR GOVERNANCE KEEPING PACE?"
+title: "Is Our Governance Keeping Pace?"
 date: 2026-11-10
 draft: false
-description: "AI IS ADVANCING."
+description: "AI Is Advancing."
 categories:
   - AI GOVERNANCE | 
   - ENTERPRISE AI STRATEGY
