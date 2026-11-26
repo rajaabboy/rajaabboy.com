@@ -27,14 +27,19 @@ And it requires tight cross-functional alignment across:
 🤝 Service Ops | SRE | Product & Engineering | Support | Customer Success
 
 🚀 5 AI Enablers Reshaping Modern ITSM
+
 1️⃣ Predictive Incident Prevention (AI-Driven AIOps)
 Shifting from detect & respond to predict & prevent. AI models flag degradation early—moving the focus from MTTR (Mean Time to Repair) to MTTP (Mean Time to Prevent).
+
 2️⃣ Agentic AI for Autonomous Remediation
 Moving beyond simple alerts. Agentic AI diagnoses, correlates, and self-heals in controlled scenarios. The question is no longer "should we automate?" but "how autonomous should it be?"
+
 3️⃣ GenAI for Self-Service & Knowledge Resolution
 Virtual agents resolving L1 queries and drafting real-time RCAs/KAs—cutting toil and freeing engineers for high-value resilience work.
+
 4️⃣ Human-in-the-Loop (HITL) as a Guardrail
 Autonomy demands oversight. HITL is the new governance standard for responsible AI, keeping decisions explainable, auditable, and safe.
+
 5️⃣ AI-Augmented Observability & Living KPIs
 Static dashboards are out. Continuous anomaly detection and auto-generated service reports turn metrics into a real-time signal of service health.
 
