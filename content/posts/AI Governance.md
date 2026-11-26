@@ -4,7 +4,7 @@ date: 2026-11-10
 draft: false
 description: "AI Is Advancing."
 categories:
-  - AI GOVERNANCE | 
+  - AI GOVERNANCE 
   - ENTERPRISE AI STRATEGY
 ---
 
