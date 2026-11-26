@@ -2,9 +2,9 @@
 title: "From Seeing What Happened to Predicting What’s Next"
 date: 2026-10-27
 draft: false
-description: "DIGITAL TWIN TECHNOLOGIES - DIGITAL PARADIGM SHIFT."
+description: "Digital Twin Technologies - A Paradigm Shift."
 categories:
-  - DIGITAL TRANSFORMATION | 
+  - DIGITAL TRANSFORMATION 
   - DIGITAL TWINS, PROCESS INTELLIGENCE
 ---
 
