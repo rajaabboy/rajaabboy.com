@@ -311,7 +311,8 @@ a.wl-item:hover .wl-title { color: var(--accent); }
   color: var(--muted);
   transition: color 0.2s;
 }
-.more-link:hover { color: var(--text); }
+.more-link:hover { color: var(--text);
+border-bottom: 1px solid var(--border);}
 
 /* Writing Categories */
 
