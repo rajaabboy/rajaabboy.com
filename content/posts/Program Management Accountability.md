@@ -1,9 +1,11 @@
 ---
-category: "Global Service Delivery - Program Management"
 title: "Go-Live is not the finish line"
 date: 2026-11-18
 draft: false
 description: "It's where the real Program Management accountability begins."
+categories:
+  - GLOBAL SERVICE DELIVERY  | 
+  - DELIVERY EXCELLENCE
 ---
 
 ## Go-Live is not the finish line
