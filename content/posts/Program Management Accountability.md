@@ -4,7 +4,7 @@ date: 2026-11-18
 draft: false
 description: "It's where the real Program Management accountability begins."
 categories:
-  - GLOBAL SERVICE DELIVERY  | 
+  - GLOBAL SERVICE DELIVERY  
   - DELIVERY EXCELLENCE
 ---
 
