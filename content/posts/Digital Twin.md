@@ -4,6 +4,7 @@ date: 2026-10-27
 draft: false
 description: "Digital Twin Technologies - A Paradigm Shift."
 image: "/Digital Twin.png"
+linkedin_url: "https://lnkd.in/p/gzfXUxND"
 categories:
   - DIGITAL TRANSFORMATION 
   - DIGITAL TWINS, PROCESS INTELLIGENCE
