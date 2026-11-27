@@ -11,7 +11,7 @@ categories:
 ---
 
 ## AI is Advancing
-AI IS ADVANCING. IS OUR GOVERNANCE KEEPING PACE?
+AI is Advancing. Is Our Governance Keeping Pace?
 
 The world is racing to adopt AI. But are we moving fast enough to govern it responsibly?
 
