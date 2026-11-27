@@ -903,3 +903,15 @@ border-bottom: 1px solid var(--border);}
     }
 
 }
+/* Give the desktop carousel more room */
+@media (min-width: 721px) {
+    .content {
+        max-width: 1200px;
+        width: 100%;
+    }
+
+    .linkedin-carousel-wrapper {
+        width: 100%;
+        overflow: hidden;
+    }
+}
