@@ -636,6 +636,7 @@ border-bottom: 1px solid var(--border);}
 .d3  { animation-delay: 0.21s; }
 .d4  { animation-delay: 0.28s; }
 
+
 /* ─── Mobile ──────────────────────────────────────────────── */
 
 @media (max-width: 720px) {
@@ -670,3 +671,68 @@ border-bottom: 1px solid var(--border);}
 ::-webkit-scrollbar-track { background: var(--bg); }
 ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
 ::-webkit-scrollbar-thumb:hover { background: var(--faint); }
+
+/* LinkedIn Thought Leadership Carousel */
+
+.linkedin-showcase {
+    margin: 50px 0;
+    overflow: hidden;
+}
+
+.linkedin-track-wrapper {
+    overflow-x: auto;
+    scrollbar-width: none;
+    scroll-snap-type: x mandatory;
+}
+
+.linkedin-track {
+    display: flex;
+    gap: 22px;
+    width: max-content;
+    padding: 20px 0;
+}
+
+.linkedin-card {
+    width: 320px;
+    min-height: 260px;
+    padding: 26px;
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    flex-shrink: 0;
+    scroll-snap-align: start;
+    transition: transform 0.3s ease;
+}
+
+.linkedin-card:hover {
+    transform: translateY(-6px);
+}
+
+.linkedin-category {
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.linkedin-card h3 {
+    font-size: 21px;
+    line-height: 1.4;
+    margin-top: 18px;
+}
+
+.linkedin-card p {
+    line-height: 1.6;
+}
+
+.linkedin-card a {
+    font-weight: 600;
+    text-decoration: none;
+}
+
+/* Mobile */
+
+@media(max-width:700px) {
+    .linkedin-card {
+        width: 280px;
+    }
+}
