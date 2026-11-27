@@ -32,6 +32,9 @@
                 {{ end }}
 
                 <h3>{{ .Title }}</h3>
+                {{ with .Params.image }}
+                 <img src="{{ . }}" alt="{{ $.Title }}">
+                 {{ end }}
 
                 <p class="linkedin-date">
                     {{ .Date.Format "January 2006" }}
