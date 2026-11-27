@@ -48,9 +48,7 @@
                     {{ end }}
 
                     {{ with .Params.image }}
-                    <img src="{{ . | relURL }}"
-                         alt="{{ $.Title }}"
-                         loading="lazy">
+                     <img src="{{ . }}" alt="{{ $.Title }}">
                     {{ end }}
 
                     <p class="linkedin-date">
@@ -111,9 +109,7 @@
                     {{ end }}
 
                     {{ with .Params.image }}
-                    <img src="{{ . | relURL }}"
-                         alt=""
-                         loading="lazy">
+                     <img src="{{ . }}" alt="{{ $.Title }}">
                     {{ end }}
 
                     <p class="linkedin-date">
