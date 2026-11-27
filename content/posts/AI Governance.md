@@ -3,7 +3,7 @@ title: "Is Our Governance Keeping Pace?"
 date: 2026-11-10
 draft: false
 description: "AI Is Advancing."
-image: "/AI Governance.png"
+image: "/ai-governance.png"
 linkedin_url: "https://lnkd.in/p/g_nkerK9"
 categories:
   - AI GOVERNANCE 
