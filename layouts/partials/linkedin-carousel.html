@@ -1,0 +1,56 @@
+<section class="linkedin-showcase">
+
+    <div class="section-header">
+        <p class="section-label">
+            THOUGHT LEADERSHIP
+        </p>
+
+        <h2>Latest Insights</h2>
+
+        <p>
+            Perspectives on Technology Leadership,
+            AI, Digital Transformation and Global
+            Service Delivery.
+        </p>
+    </div>
+
+    <div class="linkedin-track-wrapper">
+
+        <div class="linkedin-track">
+
+            {{ $posts := where .Site.RegularPages
+                "Section" "posts" }}
+
+            {{ range $posts }}
+
+            <article class="linkedin-card">
+
+                {{ with .Params.categories }}
+                <span class="linkedin-category">
+                    {{ index . 0 }}
+                </span>
+                {{ end }}
+
+                <h3>{{ .Title }}</h3>
+
+                <p class="linkedin-date">
+                    {{ .Date.Format "January 2006" }}
+                </p>
+
+                <p>
+                    {{ .Description }}
+                </p>
+
+                <a href="{{ .RelPermalink }}">
+                    Read Article →
+                </a>
+
+            </article>
+
+            {{ end }}
+
+        </div>
+
+    </div>
+
+</section>
