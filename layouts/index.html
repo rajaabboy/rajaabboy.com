@@ -83,7 +83,9 @@
       </ul>
     </section>
 
-    {{ $posts := where .Site.RegularPages "Type" "posts" }}
+{{ partial "linkedin-carousel.html" . }}
+    
+ /*   {{ $posts := where .Site.RegularPages "Type" "posts" }}
     {{ if $posts }}
     <section class="section ani d3">
       <p class="section-label">Writing</p>
@@ -101,7 +103,7 @@
       <a href="/posts/" class="more-link">All writing →</a>
       {{ end }}
     </section>
-    {{ end }}
+    {{ end }}  */
 
     <section class="section ani d4">
       <p class="section-label">Focus Areas</p>
