@@ -47,9 +47,26 @@
                     </div>
                     {{ end }}
 
-                    {{ with .Params.image }}
-                     <img src="{{ . }}" alt="{{ $.Title }}">
-                    {{ end }}
+    {{ with .Params.image }}
+
+    {{ $image := . }}
+    {{ $imageURL := $image }}
+
+    {{ if not (strings.HasPrefix $image "http") }}
+        {{ $imageURL = $image | relURL }}
+    {{ end }}
+
+    <a href="{{ $.RelPermalink }}"
+       class="linkedin-image-link">
+
+        <img
+            src="{{ $imageURL }}"
+            alt="{{ $.Title }}"
+            loading="lazy">
+
+    </a>
+
+{{ end }}
 
                     <p class="linkedin-date">
                         {{ .Date.Format "January 2, 2006" }}
@@ -108,9 +125,26 @@
                     </div>
                     {{ end }}
 
-                    {{ with .Params.image }}
-                     <img src="{{ . }}" alt="{{ $.Title }}">
-                    {{ end }}
+    {{ with .Params.image }}
+
+    {{ $image := . }}
+    {{ $imageURL := $image }}
+
+    {{ if not (strings.HasPrefix $image "http") }}
+        {{ $imageURL = $image | relURL }}
+    {{ end }}
+
+    <a href="{{ $.RelPermalink }}"
+       class="linkedin-image-link">
+
+        <img
+            src="{{ $imageURL }}"
+            alt="{{ $.Title }}"
+            loading="lazy">
+
+    </a>
+
+{{ end }}
 
                     <p class="linkedin-date">
                         {{ .Date.Format "January 2, 2006" }}
