@@ -903,15 +903,180 @@ border-bottom: 1px solid var(--border);}
     }
 
 }
-/* Give the desktop carousel more room */
-@media (min-width: 721px) {
+```css
+/* ==========================================
+   RESPONSIVE CONTENT & SPACING OPTIMIZATION
+   Rajaabboy.com
+========================================== */
+
+/* GLOBAL CONTENT */
+
+.content {
+    width: 100%;
+    max-width: 1200px;
+    min-width: 0;
+    padding: 32px clamp(20px, 3.5vw, 48px);
+    box-sizing: border-box;
+}
+
+/* SECTION SPACING */
+
+.section {
+    padding: clamp(22px, 3vh, 32px) 0;
+}
+
+.section-label {
+    margin-bottom: 18px;
+}
+
+/* EXPERIENCE AND SELECTED WORK */
+
+.building-list {
+    gap: 1.4rem;
+}
+
+/* LINKEDIN SHOWCASE */
+
+.linkedin-showcase {
+    width: 100%;
+    margin: 0;
+    padding: 26px 0;
+    overflow: hidden;
+}
+
+.linkedin-showcase-header {
+    margin-bottom: 18px;
+    gap: 15px;
+}
+
+.linkedin-heading {
+    margin-bottom: 6px;
+}
+
+.linkedin-intro {
+    max-width: 600px;
+}
+
+/* CAROUSEL */
+
+.linkedin-carousel-wrapper {
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.linkedin-track {
+    display: flex;
+    width: max-content;
+}
+
+.linkedin-group {
+    gap: 18px;
+    padding-right: 18px;
+}
+
+.linkedin-card {
+    width: 300px;
+    min-height: 300px;
+    padding: 20px;
+}
+
+/* DESKTOP */
+
+@media (min-width: 1024px) {
+
     .content {
         max-width: 1200px;
-        width: 100%;
+        padding: 34px 40px;
     }
 
-    .linkedin-carousel-wrapper {
+    .linkedin-showcase {
+        padding: 24px 0;
+    }
+
+    .linkedin-card {
+        width: 300px;
+    }
+}
+
+/* TABLET */
+
+@media (min-width: 721px) and (max-width: 1023px) {
+
+    .content {
         width: 100%;
-        overflow: hidden;
+        padding: 26px 24px;
+    }
+
+    .section {
+        padding: 24px 0;
+    }
+
+    .linkedin-card {
+        width: 280px;
+    }
+}
+
+/* MOBILE */
+
+@media (max-width: 720px) {
+
+    .content {
+        width: 100%;
+        padding: 16px 16px;
+    }
+
+    .section {
+        padding: 20px 0;
+    }
+
+    .building-list {
+        gap: 1.2rem;
+    }
+
+    .linkedin-showcase {
+        margin: 0;
+        padding: 20px 0;
+    }
+
+    .linkedin-showcase-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+        margin-bottom: 16px;
+    }
+
+    .linkedin-heading {
+        font-size: 1.65rem;
+    }
+
+    .linkedin-card {
+        width: 270px;
+        min-height: 290px;
+        padding: 18px;
+    }
+
+    .linkedin-group {
+        gap: 14px;
+        padding-right: 14px;
+    }
+
+    .linkedin-track {
+        animation-duration: 45s;
+    }
+}
+
+/* PREVENT HORIZONTAL OVERFLOW */
+
+.site,
+.content,
+.linkedin-showcase {
+    min-width: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .linkedin-track {
+        animation: none;
     }
 }
