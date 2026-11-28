@@ -3,6 +3,8 @@ title: "Global Service Delivery is No Longer a Back-Office Function"
 date: 2026-11-26
 draft: false
 description: "The Boardroom Reality"
+image: "/Future of Global Service Delivery.png"
+linkedin_url: "https://lnkd.in/p/g27SB8cD"
 categories:
   - CTO LEADERSHIP 
   - CTO STRATEGY
