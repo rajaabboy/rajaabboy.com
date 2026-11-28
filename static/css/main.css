@@ -886,7 +886,7 @@ border-bottom: 1px solid var(--border);}
         animation-duration: 45s;
     }
 
-}
+} 
 
 
 /* ACCESSIBILITY */
@@ -1018,7 +1018,7 @@ border-bottom: 1px solid var(--border);}
     }
 }
 
-/* MOBILE */
+/* MOBILE
 
 @media (max-width: 720px) {
 
@@ -1065,7 +1065,7 @@ border-bottom: 1px solid var(--border);}
     .linkedin-track {
         animation-duration: 45s;
     }
-}
+}  */
 
 /* PREVENT HORIZONTAL OVERFLOW */
 
