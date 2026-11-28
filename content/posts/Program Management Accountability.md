@@ -3,6 +3,8 @@ title: "Go-Live is not the finish line"
 date: 2026-11-18
 draft: false
 description: "It's where the real Program Management accountability begins."
+image: "/Scaled Program Manager.png"
+linkedin_url: "https://lnkd.in/p/gQn4v_qD"
 categories:
   - GLOBAL SERVICE DELIVERY  
   - DELIVERY EXCELLENCE
