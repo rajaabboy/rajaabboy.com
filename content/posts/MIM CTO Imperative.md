@@ -3,6 +3,8 @@ title: "Why Major Incident Management is a C-Suite Imperative"
 date: 2026-11-26
 draft: false
 description: "Beyond Incident Resolution."
+image: "/Transforming MIM.png"
+linkedin_url: "https://lnkd.in/p/gk2iX-th"
 categories:
   - CTO LEADERSHIP
   - EXECUTIVE LEADERSHIP
