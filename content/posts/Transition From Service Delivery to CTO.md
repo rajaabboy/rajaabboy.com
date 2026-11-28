@@ -3,6 +3,8 @@ title: "From Operational Delivery to the C-Suite"
 date: 2026-09-26
 draft: false
 description: "Transitioning from Service Delivery Leader to CTO."
+image: "/CTO Evolution.png"
+linkedin_url: "https://lnkd.in/p/gfcahc_k"
 categories:
   - CTO LEADERSHIP 
   - TECHNOLOGY STRATEGY
