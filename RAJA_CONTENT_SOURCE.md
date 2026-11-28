@@ -51,10 +51,10 @@ AI-Augmented Delivery · Automation & TOIL Reduction · Legacy Modernization · 
 ## Experience Highlights  *(story-driven cards, not resume bullets)*
 
 **1. Protecting a $30M portfolio through crisis — Celonis**
-When premier accounts hit high-severity platform instability, I'm the executive point of contact. I lead the escalation, keep the client's leadership informed, and turn the incident into a reason for them to trust us more — protecting close to $30M in ARR across North America and EMEA.
+Around 3 Years When premier accounts hit high-severity platform instability, I'm the executive point of contact. I lead the escalation, keep the client's leadership informed, and turn the incident into a reason for them to trust us more — protecting close to $30M in ARR across North America and EMEA.
 
 **2. Engineering resilience at scale — Wells Fargo**
-I brought SRE discipline to crown-jewel brokerage platforms, onboarding Tier-1 applications onto unified observability and holding monthly availability at 99.5%. I owned root-cause analysis end to end and acted as the change gatekeeper that kept the platform stable.
+Across 6 Years I brought SRE discipline to crown-jewel brokerage platforms, onboarding Tier-1 applications onto unified observability and holding monthly availability at 99.5%. I owned root-cause analysis end to end and acted as the change gatekeeper that kept the platform stable.
 
 **3. Running the business of delivery — Cognizant**
 Across 13 years I led PMOs and delivery teams of up to 120+ people and owned accounts worth $9M/year (Fossil) and $2.4M/year (Payless) — managing budgets, forecasts, and client proposals, and earning the Retail CG Icon of the Year award in 2015.
