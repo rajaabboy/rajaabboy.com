@@ -3,6 +3,8 @@ title: "From Technology Operations to Business Transformation"
 date: 2026-09-25
 draft: false
 description: "The Evolving Role of the CTO"
+image: "/Evolving role of the CTO.png"
+linkedin_url: "https://lnkd.in/p/gVgg4huB"
 categories:
   - DIGITAL TRANSFORMATION 
   - ENTERPRISE TECHNOLOGY
