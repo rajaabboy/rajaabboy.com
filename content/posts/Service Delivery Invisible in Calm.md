@@ -3,6 +3,8 @@ title: "Invisible in Calm, Invaluable in Crisis"
 date: 2026-08-16
 draft: false
 description: "Global Service Delivery"
+image: "/Service Delivery in Crisis.png"
+linkedin_url: "https://lnkd.in/p/gBTqG6Qw"
 categories:
   - GLOBAL SERVICE DELIVERY
   - DELIVERY EXCELLENCE AND GOVERNANCE
