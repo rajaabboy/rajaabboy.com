@@ -3,6 +3,9 @@ title: "Can Major Incident Management (MIM) be a separate Managed Service?"
 date: 2026-08-14
 draft: false
 description: "Major Incident Management: More Than Just Incident Resolution."
+image: "/MIM Future of Service Delivery.png"
+linkedin_url: "https://lnkd.in/p/gQUu2mW7"
+
 categories:
   - GLOBAL SERVICE DELIVERY 
   - DELIVERY & OPERATIONAL EXCELLENCE
